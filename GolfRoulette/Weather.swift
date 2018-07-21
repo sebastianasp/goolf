@@ -84,6 +84,7 @@ struct Weather {
             rainfallInLast3Hours = nil
         }
         
+        
         let sysDict = weatherData["sys"] as! [String: AnyObject]
         country = sysDict["country"] as! String
         sunrise = NSDate(timeIntervalSince1970: sysDict["sunrise"] as! TimeInterval)
