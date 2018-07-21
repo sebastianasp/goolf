@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.otf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-SemiBold.otf">
+            <string>Poppins-SemiBold</string>
+        </array>
+        <array key="fa-solid-900.ttf">
+            <string>FontAwesome5FreeSolid</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GolfRoulette" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="E9a-FG-wiO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJk-ub-nh3">
+                                <rect key="frame" x="100" y="132" width="175" height="67.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="goolf.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="48" name="Poppins-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qqM-7E-Ghm">
+                                <rect key="frame" x="70" y="305" width="235" height="59.5"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Find course..." translatesAutoresizingMaskIntoConstraints="NO" id="UZy-b0-IDb">
+                                        <rect key="frame" x="0.0" y="2" width="205" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVD-yO-3Oq">
+                                        <rect key="frame" x="205" y="14" width="30" height="32"/>
+                                        <fontDescription key="fontDescription" name="FontAwesome5FreeSolid" family="Font Awesome 5 Free" pointSize="20"/>
+                                        <state key="normal" title="">
+                                            <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="getGpsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JFe-DL-xUR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0WL-du-Qf4">
+                                <rect key="frame" x="80" y="269.5" width="215" height="25.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Choose location">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="Poppins-SemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location will be shown here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLn-H6-PE8">
+                                <rect key="frame" x="0.0" y="399.5" width="375" height="25.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jhj-tG-bFA">
+                                <rect key="frame" x="174" y="472" width="161" height="155"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22⁰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqu-6Z-PLS">
+                                <rect key="frame" x="40" y="490" width="114" height="112"/>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="80"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fqu-6Z-PLS" firstAttribute="top" secondItem="eLn-H6-PE8" secondAttribute="bottom" constant="65" id="1ET-lu-qC5"/>
+                            <constraint firstItem="fJk-ub-nh3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="1Kf-ll-CsX"/>
+                            <constraint firstItem="eLn-H6-PE8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3cF-FA-bIg"/>
+                            <constraint firstItem="jhj-tG-bFA" firstAttribute="leading" secondItem="fqu-6Z-PLS" secondAttribute="trailing" constant="20" id="4cN-o3-wTe"/>
+                            <constraint firstItem="fJk-ub-nh3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="94q-m4-dyJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E9a-FG-wiO" secondAttribute="bottom" id="BZ4-q3-bI0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0WL-du-Qf4" secondAttribute="trailing" constant="80" id="DCh-VJ-Bm7"/>
+                            <constraint firstItem="E9a-FG-wiO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qme-zv-SRf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fJk-ub-nh3" secondAttribute="trailing" constant="100" id="U57-e8-pEC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eLn-H6-PE8" secondAttribute="trailing" id="VbF-eR-Pfb"/>
+                            <constraint firstItem="fqu-6Z-PLS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="WD9-Ay-sZ8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jhj-tG-bFA" secondAttribute="trailing" constant="40" id="WVB-gc-Zw6"/>
+                            <constraint firstItem="jhj-tG-bFA" firstAttribute="leading" secondItem="fqu-6Z-PLS" secondAttribute="trailing" constant="20" id="YJh-1p-CgO"/>
+                            <constraint firstItem="eLn-H6-PE8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aM3-3d-RnL"/>
+                            <constraint firstItem="0WL-du-Qf4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="grD-nu-7X5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fqu-6Z-PLS" secondAttribute="bottom" constant="65" id="mMF-F2-J2M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E9a-FG-wiO" secondAttribute="trailing" id="mu4-ix-mSb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qqM-7E-Ghm" secondAttribute="trailing" constant="70" id="sw4-rG-amb"/>
+                            <constraint firstItem="0WL-du-Qf4" firstAttribute="top" secondItem="fJk-ub-nh3" secondAttribute="bottom" constant="70" id="t50-bp-Cp6"/>
+                            <constraint firstItem="qqM-7E-Ghm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="uRW-0e-5oh"/>
+                            <constraint firstItem="qqM-7E-Ghm" firstAttribute="top" secondItem="0WL-du-Qf4" secondAttribute="bottom" constant="10" id="vuD-Qc-O0N"/>
+                            <constraint firstItem="E9a-FG-wiO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wfN-Kd-ot8"/>
+                            <constraint firstItem="eLn-H6-PE8" firstAttribute="top" secondItem="qqM-7E-Ghm" secondAttribute="bottom" constant="35" id="xhR-GE-wzp"/>
+                            <constraint firstItem="jhj-tG-bFA" firstAttribute="top" secondItem="eLn-H6-PE8" secondAttribute="bottom" constant="47" id="yGb-mz-Joh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jhj-tG-bFA" secondAttribute="bottom" constant="40" id="zdX-nG-xyj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchLocationBar" destination="UZy-b0-IDb" id="hMC-gJ-2Pa"/>
+                        <outlet property="showDegrees" destination="fqu-6Z-PLS" id="AhP-hN-TND"/>
+                        <outlet property="showLocationName" destination="eLn-H6-PE8" id="cp1-qX-ieX"/>
+                        <outlet property="showWeatherIcon" destination="jhj-tG-bFA" id="Yi5-gb-vNZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="640" height="425"/>
+    </resources>
+</document>
